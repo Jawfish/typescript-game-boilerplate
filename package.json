@@ -1,17 +1,19 @@
 {
-  "name": "pong",
-  "version": "1.0.0",
+  "name": "typescript-project",
+  "version": "0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
     "start": "parcel src/index.html",
+    "test": "jest",
+    "tsc": "tsc",
+    "gts": "gts",
+    "ts-watch": "tsc -w src/Index.ts -outDir dist/",
+    "jest-watch": "jest --watchAll",
+    "ts-build": "tsc src/Index.ts -outDir dist/",
     "check": "gts check",
     "clean": "gts clean",
-    "fix": "gts fix",
-    "compile": "tsc -p .",
-    "prepare": "npm run compile",
-    "pretest": "npm run compile",
-    "posttest": "npm run check"
+    "fix": "gts fix"
   },
   "keywords": [],
   "author": "",
